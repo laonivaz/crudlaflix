@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laflix - Administração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="verificarAdmin()">
+    <header>
+        <a href="get.html" class="logo">LAFLIX - ADMIN</a>
+        <nav>
+            <a href="get.html">Boas-vindas</a>
+            <button onclick="sair()" class="btn-sair">Sair do Sistema</button>
+        </nav>
+    </header>
+
+    <div class="admin-area">
+        <h1>Administração de Usuários</h1>
+
+        <div class="busca-linha">
+            <input type="text" id="identificadorCPF" placeholder="Buscar usuário pelo CPF">
+            <button onclick="buscarDados()">Buscar</button>
+            <button onclick="listarTodos()" class="btn-azul">Todos</button>
+        </div>
+
+        <div id="areaEdicao" class="caixa larga" style="display: none; margin: 20px 0;">
+            <h2>Editar Usuário</h2>
+            <input type="hidden" id="identificador">
+            <input type="hidden" id="adminAtualizar">
+
+            <label>Nome:</label>
+            <input type="text" id="nomeAtualizar">
+
+            <label>Sobrenome:</label>
+            <input type="text" id="sobrenomeAtualizar">
+
+            <label>CPF:</label>
+            <input type="text" id="cpfAtualizar">
+
+            <label>Email:</label>
+            <input type="email" id="emailAtualizar">
+
+            <label>Senha:</label>
+            <input type="text" id="senhaAtualizar">
+
+            <label>CEP:</label>
+            <input type="text" id="cepAtualizar" onblur="buscarCEPEdicao(this.value)">
+
+            <label>Rua:</label>
+            <input type="text" id="ruaAtualizar">
+
+            <label>Cidade:</label>
+            <input type="text" id="cidadeAtualizar">
+
+            <label>Estado:</label>
+            <input type="text" id="estadoAtualizar">
+
+            <label>Telefone:</label>
+            <input type="text" id="telefoneAtualizar">
+
+            <button onclick="atualizarDados()" class="btn-azul">Salvar Edição</button>
+            <button onclick="fecharEdicao()">Cancelar</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>CPF</th>
+                    <th>Email</th>
+                    <th>Cidade/UF</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-corpo"></tbody>
+        </table>
+    </div>
+
+    <script src="put.js"></script>
+</body>
+</html>

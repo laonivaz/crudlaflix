@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.oculto {
+    display: none;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #000000;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    color: #ff1493;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+nav a, nav button {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ff1493;
+}
+
+.btn-sair {
+    background-color: #ff1493;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-sair:hover {
+    background-color: #c71585;
+    color: #fff;
+}
+
+/* Caixas de Formulário */
+.caixa {
+    background-color: rgba(0, 0, 0, 0.85);
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.caixa.larga {
+    max-width: 650px;
+}
+
+.caixa-edicao {
+    margin: 20px 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    color: #bbb;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff1493;
+    background-color: #444;
+}
+
+button, input[type="button"] {
+    margin-top: 18px;
+    padding: 12px 18px;
+    background-color: #ff1493;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover, input[type="button"]:hover {
+    background-color: #c71585;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-azul {
+    background-color: #2b7de9;
+}
+
+.btn-azul:hover {
+    background-color: #1c5db3;
+}
+
+.link-texto {
+    margin-top: 20px;
+    color: #888;
+    font-size: 14px;
+}
+
+.link-texto a {
+    color: #ff1493;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-texto a:hover {
+    text-decoration: underline;
+}
+
+/* Banner de Boas-Vindas */
+.hero {
+    text-align: center;
+    padding: 60px 20px 30px;
+    background: linear-gradient(to bottom, #000000, #141414);
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #ff1493;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Catálogo de Filmes e Séries (Anos 2000) */
+.catalogo-container {
+    padding: 10px 5% 60px;
+}
+
+.titulo-secao {
+    font-size: 22px;
+    margin-top: 35px;
+    margin-bottom: 18px;
+    color: #ffffff;
+    border-left: 4px solid #ff1493;
+    padding-left: 12px;
+}
+
+.grade-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card-titulo {
+    padding: 22px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 245px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-titulo:hover {
+    transform: scale(1.04);
+    border-color: #ff1493;
+    box-shadow: 0 8px 20px rgba(255, 20, 147, 0.3);
+}
+
+/* Cores de fundo dos cards */
+.card-azul { background: linear-gradient(135deg, #1b3b6f, #141414); }
+.card-verde { background: linear-gradient(135deg, #1e5631, #141414); }
+.card-vermelho { background: linear-gradient(135deg, #9b1152, #1a1a1a); }
+.card-dourado { background: linear-gradient(135deg, #6b3e00, #141414); }
+.card-roxo { background: linear-gradient(135deg, #6a1b5d, #141414); }
+.card-petroleo { background: linear-gradient(135deg, #0f4c5c, #141414); }
+.card-grafite { background: linear-gradient(135deg, #2b2d42, #141414); }
+.card-vinho { background: linear-gradient(135deg, #5e1742, #141414); }
+.card-sangue { background: linear-gradient(135deg, #880e4f, #000000); }
+.card-oceano { background: linear-gradient(135deg, #1d3557, #141414); }
+.card-terra { background: linear-gradient(135deg, #5c3a21, #141414); }
+.card-escritorio { background: linear-gradient(135deg, #2a4d69, #141414); }
+
+.tag-tipo {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ff69b4;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 4px 8px;
+    border-radius: 4px;
+    align-self: flex-start;
+    margin-bottom: 12px;
+}
+
+.card-titulo h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #ffffff;
+}
+
+.info-titulo {
+    font-size: 12px;
+    color: #bbbbbb;
+    margin-bottom: 10px;
+}
+
+.sinopse {
+    font-size: 14px;
+    color: #e0e0e0;
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+
+.btn-assistir {
+    margin-top: auto;
+    padding: 10px 14px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-assistir:hover {
+    background-color: #ff1493;
+    color: #ffffff;
+}
+
+/* Página de Administração */
+.admin-area {
+    padding: 30px 5%;
+}
+
+.busca-linha {
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+.busca-linha button {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1f1f1f;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: #000;
+    color: #ff1493;
+}
+
+.tag-protegido {
+    display: inline-block;
+    background-color: #444;
+    color: #61143b;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+}

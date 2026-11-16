@@ -1,0 +1,46 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Laoni",
+      "sobrenome": "Vaz",
+      "cpf": "000.000.000-00",
+      "email": "laonivaz@email.com",
+      "senha": "1102",
+      "rua": "Av. Paulista, 1000",
+      "cep": "01310-100",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "telefone": "(11) 99999-9999",
+      "admin": true
+    },
+    {
+      "nome": "beatriz",
+      "sobrenome": "silva",
+      "cpf": "5072658921",
+      "email": "beatriz.silva@email.com",
+      "senha": "123456",
+      "rua": "Rua Mil Oitocentos e Vinte e Dois",
+      "cep": "04216-900",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "telefone": "112345677789",
+      "admin": false,
+      "id": 3
+    },
+    {
+      "nome": "Bruno",
+      "sobrenome": "messias",
+      "cpf": "04136958725",
+      "email": "bruno@messias.com",
+      "senha": "0409",
+      "rua": "Rua Mil Oitocentos e Vinte e Dois",
+      "cep": "04216-900",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "telefone": "1198756982",
+      "admin": false,
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laflix - Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="verificarBoasVindas()">
+    <header>
+        <a href="get.html" class="logo">LAFLIX</a>
+        <nav>
+            <a href="get.html">Início</a>
+            <a href="put.html" id="linkAdmin" style="display: none;">Administração</a>
+            <button onclick="sair()" class="btn-sair">Sair do Sistema</button>
+        </nav>
+    </header>
+
+    <!-- Banner Principal com Boas-vindas -->
+    <div class="hero">
+        <h1 id="msgBoasVindas">Bem-vindo à Laflix!</h1>
+        <p>filmes e series inesquecíveis para maratonar com a familia</p>
+    </div>
+
+    <main class="catalogo-container">
+        
+        <h2 class="titulo-secao">Filmes</h2>
+        <div class="grade-catalogo">
+            <div class="card-titulo" style="background: linear-gradient(135deg, #1b3b6f, #141414);">
+                <span class="tag-tipo">FILME</span>
+                <h3>Harry Potter e a Pedra Filosofal</h3>
+                <p class="info-titulo">2001 • Fantasia / Aventura • Livre</p>
+                <p class="sinopse">Um garoto órfão descobre aos 11 anos que é um bruxo e ingressa na Escola de Magia de Hogwarts.</p>
+                <button class="btn-assistir" onclick="alert('Iniciando reprodução: Harry Potter e a Pedra Filosofal (2001)')">▶ Assistir</button>
+            </div>
+
+            <div class="card-titulo" style="background: linear-gradient(135deg, #1e5631, #141414);">
+                <span class="tag-tipo">FILME</span>
+                <h3>Shrek</h3>
+                <p class="info-titulo">2001 • Animação / Comédia • Livre</p>
+                <p class="sinopse">Um ogro rabugento embarca em uma missão com um burro falante para resgatar a Princesa Fiona.</p>
+                <button class="btn-assistir" onclick="alert('Iniciando reprodução: Shrek (2001)')">▶ Assistir</button>
+            </div>
+
+            <div class="card-titulo" style="background: linear-gradient(135deg, #7f0000, #1a1a1a);">
+                <span class="tag-tipo">FILME</span>
+                <h3>Homem-Aranha</h3>
+                <p class="info-titulo">2002 • Ação / Super-herói • 12+</p>
+                <p class="sinopse">Picado por uma aranha geneticamente modificada, Peter Parker ganha poderes e enfrenta o Duende Verde.</p>
+                <button class="btn-assistir" onclick="alert('Iniciando reprodução: Homem-Aranha (2002)')">▶ Assistir</button>
+            </div>
+
+            <div class="card-titulo" style="background: linear-gradient(135deg, #6b3e00, #141414);">
+                <span class="tag-tipo">FILME</span>
+                <h3>O Senhor dos Anéis: A Sociedade do Anel</h3>
+                <p class="info-titulo">2001 • Fantasia / Épico • 12+</p>
+                <p class="sinopse">O hobbit Frodo Bolseiro inicia uma jornada perigosa para destruir o Um Anel na Montanha da Perdição.</p>
+                <button class="btn-assistir" onclick="alert('Iniciando reprodução: O Senhor dos Anéis: A Sociedade do Anel (2001)')">▶ Assistir</button>
+            </div>
+
+            <div class="card-titulo" style="background: linear-gradient(135deg, #4a154b, #141414);">
+                <span class="tag-tipo">FILME</span>
+                <h3>Meninas Malvadas</h3>
+                <p class="info-titulo">2004 • Comédia • 12+</p>
+                <p class="sinopse">Recém-chegada ao ensino médio, Cady tenta sobreviver às regras sociais do grupo mais popular da escola.</p>
+                <button class="btn-assistir" onclick="alert('Iniciando reprodução: Meninas Malvadas (2004)')">▶ Assistir</button>
+            </div>
+
+            <div class="card-titulo" style="background: linear-gradient(135deg, #0f4c5c, #141414);">
+                <span class="tag-tipo">FILME</span>
+                <h3>As Branquelas</h3>
+                <p class="info-titulo">2004 • Comédia • 14+</p>
+                <p class="sinopse">Dois agentes do FBI se disfarçam de socialites milionárias para impedir um sequestro nos Hamptons.</p>
+                <button class="btn-assistir" onclick="alert('Iniciando reprodução: As Branquelas (2004)')">▶ Assistir</button>
+            </div>
+
+            <div class="card-titulo" style="background: linear-gradient(135deg, #2b2d42, #141414);">
+                <span class="tag-tipo">FILME</span>
+                <h3>Batman: O Cavaleiro das Trevas</h3>
+                <p class="info-titulo">2008 • Ação / Crime • 14+</p>
+                <p class="sinopse">Batman enfrenta o caos imposto em Gotham City pelo imprevisível criminoso conhecido como Coringa.</p>
+                <button class="btn-assistir" onclick="alert('Iniciando reprodução: Batman: O Cavaleiro das Trevas (2008)')">▶ Assistir</button>
+            </div>
+
+            <div class="card-titulo" style="background: linear-gradient(135deg, #3c1642, #141414);">
+                <span class="tag-tipo">FILME</span>
+                <h3>Crepúsculo</h3>
+                <p class="info-titulo">2008 • Romance / Fantasia • 12+</p>
+                <p class="sinopse">Ao se mudar para a chuvosa cidade de Forks, Bella Swan se apaixona pelo misterioso Edward Cullen.</p>
+                <button class="btn-assistir" onclick="alert('Iniciando reprodução: Crepúsculo (2008)')">▶ Assistir</button>
+            </div>
+        </div>
+
+        <h2 class="titulo-secao">Séries </h2>
+        <div class="grade-catalogo">
+            <div class="card-titulo" style="background: linear-gradient(135deg, #8b0000, #000000);">
+                <span class="tag-tipo">SÉRIE • 15 TEMPORADAS</span>
+                <h3>Supernatural</h3>
+                <p class="info-titulo">2005 • Terror / Fantasia • 16+</p>
+                <p class="sinopse">Os irmãos Sam e Dean Winchester cruzam os Estados Unidos caçando criaturas sobrenaturais.</p>
+                <button class="btn-assistir" onclick="alert('Iniciando reprodução: Supernatural (2005) - T1:E1')">▶ Assistir</button>
+            </div>
+
+            <div class="card-titulo" style="background: linear-gradient(135deg, #1d3557, #141414);">
+                <span class="tag-tipo">SÉRIE • 6 TEMPORADAS</span>
+                <h3>Lost</h3>
+                <p class="info-titulo">2004 • Mistério / Drama • 14+</p>
+                <p class="sinopse">Sobreviventes de um acidente aéreo precisam unir forças para sobreviver em uma ilha cheia de segredos.</p>
+                <button class="btn-assistir" onclick="alert('Iniciando reprodução: Lost (2004) - T1:E1')">▶ Assistir</button>
+            </div>
+
+            <div class="card-titulo" style="background: linear-gradient(135deg, #5c3a21, #141414);">
+                <span class="tag-tipo">SÉRIE • 4 TEMPORADAS</span>
+                <h3>Todo Mundo Odeia o Chris</h3>
+                <p class="info-titulo">2005 • Comédia • 12+</p>
+                <p class="sinopse">As desventuras de Chris durante sua adolescência no Brooklyn nos anos 80, narradas com muito humor.</p>
+                <button class="btn-assistir" onclick="alert('Iniciando reprodução: Todo Mundo Odeia o Chris (2005) - T1:E1')">▶ Assistir</button>
+            </div>
+
+            <div class="card-titulo" style="background: linear-gradient(135deg, #2a4d69, #141414);">
+                <span class="tag-tipo">SÉRIE • 9 TEMPORADAS</span>
+                <h3>The Office</h3>
+                <p class="info-titulo">2005 • Comédia • 12+</p>
+                <p class="sinopse">O cotidiano caótico e hilário dos funcionários de uma empresa de papel liderados por Michael Scott.</p>
+                <button class="btn-assistir" onclick="alert('Iniciando reprodução: The Office (2005) - T1:E1')">▶ Assistir</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="get.js"></script>
+</body>
+</html>
